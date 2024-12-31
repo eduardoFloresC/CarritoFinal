@@ -1,0 +1,1 @@
+Este es mi sitio para la compra venta de cartas y sus productos relacionados.

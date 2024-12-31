@@ -1,0 +1,223 @@
+body {
+    /* background-image: url("../media/Yu_Gi_Oh_fondo.jpg"); 
+    #f0d69c
+    */
+    /* background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../media/egipto.png"); */
+    background: rgb(237, 232, 63);
+    background: linear-gradient(84deg, rgba(237, 232, 63, 0.9051995798319328) 37%, rgba(255, 154, 0, 1) 66%);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+main {
+    background-image: url("../media/hieroglyphs-bg.png");
+    color: white;
+}
+
+form {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: column;
+}
+
+.medios {
+    text-align: center;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #ececec;
+    font-family: sans-serif;
+}
+
+.abrir-menu {
+    display: none;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* header {
+    text-align: center;
+} */
+
+header {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /* background-color: #333;
+} 
+*/
+
+
+/* .navbar ul li {
+    float: left;
+    background-color: #333;
+} */
+
+.listing li a {
+    /* display: block; */
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.listing li a:hover {
+    background-color: #111;
+}
+
+li img {
+    /* height: 8rem; */
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.listing li {
+    border: 2px solid orange;
+    border-radius: 8px;
+    padding: 5px;
+    width: 15rem;
+}
+
+#dibujo {
+    width: auto;
+}
+
+#productos img {
+    height: 10rem;
+}
+
+.listing {
+    list-style: none;
+    margin: 4em;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+.boton-agregar-carrito {
+    background-color: #0c0c0c;
+    color: #ccc;
+    border-radius: 12px;
+}
+
+#carrito {
+    border: .3rem solid orange;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    .cerrar-menu {
+        color: #ececec;
+    }
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0c0c0c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: end;
+    }
+    .nav-list li a {
+        color: #ececec;
+    }
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar {
+    z-index: 10000;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    display: flex;
+}
+
+.xtarget:target {
+    margin-top: -12px;
+    padding-top: 60px;
+}
+
+
+/* Add 'Currently Reading' to targeted section (optional) */
+
+.xtarget:target:before {
+    content: 'Currently Reading';
+    font-family: 'Open Sans', sans;
+    font-size: 12px;
+    background: #ccc;
+    border-radius: 3px;
+    background-clip: padding-box;
+    color: #fff;
+    padding: 0 5px;
+    position: absolute;
+    top: 24px;
+}

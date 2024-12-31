@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="media/entersorce.jpg" alt="">
+        <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+        <nav class="nav" id="nav">
+            <button id="cerrar" class="cerrar-menu"><i class="bi bi-x"></i></button>
+            <ul class="nav-list">
+                <li>
+                    <a href="#"></i>Inicio</a>
+                </li>
+                <li><a href="#acerca">Acerca de...</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- <nav class="navbar">
+        <img class="logou" src="media/entersorce.jpg" alt="">
+        <ul>
+            <li>
+                <a href="#"></i>Inicio</a>
+            </li>
+            <li><a href="#acerca">Acerca de...</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav> -->
+
+    <p>Bienvenido</p>
+
+    <h1>Tienda de cartas TCG-MAN</h1>
+
+    <main>
+        <p>Sección Principal</p>
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga inventore ipsa iste laborum quam aspernatur magni voluptatem placeat rem dolore laudantium excepturi ut, asperiores itaque molestiae ipsam nesciunt porro minima?</div>
+
+        <div class="medios">
+            <h3>Yu-Gi-Oh! Para Principiantes - Empezando</h3>
+            <video controls title="Yu-Gi-Oh! Para Principiantes - Empezando">
+                <source src="media/yugiintro.mp4" type="video/mp4">
+                <track src="media/yugiintro.vtt" kind="subtitles" srclang="no" label="Spanish" default>
+            </video>
+        </div>
+
+        <div>
+            <h3>Nuestros Servicios</h3>
+            <div> Nos dedicamos a la compra y venta de cartas (TCG)</div>
+            <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus eaque nostrum, esse nemo aut illum. Cumque unde voluptatibus tempore quasi rem ea, doloremque sunt sed est nesciunt omnis quibusdam odio.</div>
+        </div>
+
+        <div class="xtarget" id="acerca">
+            <h3>Acerca de Nosotros</h3>
+            <div>Nos dedicamos a esto por la diversión y el entretenimiento. </div>
+            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint atque velit, voluptate, nisi ipsa blanditiis nam aliquid voluptatum consequatur unde pariatur necessitatibus doloribus quibusdam earum, ea facere hic doloremque laudantium. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Ea doloremque quia modi, magni dolores reprehenderit facere recusandae quos neque in porro atque aliquam laboriosam voluptatem cumque enim, totam consectetur qui.</div>
+        </div>
+
+        <div>
+            <h2 class="xtarget" id="productos">Productos</h2>
+            <!-- <div id="contenedorProductos" class="productos"></div> -->
+            <ul class="listing" id="contenedorProductos">
+
+            </ul>
+        </div>
+
+        <section id="carrito">
+            <h2></h2>
+            <ul></ul>
+            <p>Total a Pagar</p>
+            <input id="boton-borrar" value="Borrar" type="button">
+            <input id="boton-pagar" value="Ir a Pagar" type="button">
+            <p id="mensajeCarrito"></p>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="xtarget" id="contacto">
+            <h3>Contacto</h3>
+            <form action="https://formspree.io/f/xkgnwprb" method="POST">
+                <div class="formulario">
+                    <label>Tu email:</label>
+                    <input type="email" name="email">
+                    <label>Tu mensaje:
+                    </label>
+                    <textarea name="message" rows="8"></textarea>
+                    <!-- your other form fields go here -->
+                </div>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+        <div>Nuestro local</div>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13110.7265609539!2d-58.21381374754638!3d-34.76361164075421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1730655688307!5m2!1ses-419!2sar" width="600" height="450" style="border:0;"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <p>Mi sitio web todos los derechos reservados</p>
+    </footer>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
